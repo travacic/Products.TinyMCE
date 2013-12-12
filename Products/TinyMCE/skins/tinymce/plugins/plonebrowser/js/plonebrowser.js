@@ -751,21 +751,7 @@ BrowserDialog.prototype.setDetails = function (url) {
             jq('#description_href', document).val(data.url);
 
             // Repopulate the <option>s in the dimensions <select> element.
-            if (data.scales) {
-                dimensions = jq('#dimensions', document).empty();
 
-                jq.each(data.scales, function () {
-                    var scale = this,
-                        option = jq('<option/>', document)
-                            .attr({'value': scale.value})
-                            .text(scale_title(scale));
-
-                    if (option.val() === dimension) {
-                        option.attr({'selected': 'selected'});
-                    }
-                    option.appendTo(dimensions);
-                });
-            }
             self.displayPanel('details');
 
             // select radio button in folder listing and mark selected image
