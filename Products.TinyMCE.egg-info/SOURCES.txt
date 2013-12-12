@@ -833,11 +833,11 @@ Products/TinyMCE/skins/tinymce/plugins/spellchecker/img/wline.gif
 Products/TinyMCE/skins/tinymce/plugins/tabfocus/editor_plugin.js
 Products/TinyMCE/skins/tinymce/plugins/table/cell.htm.pt
 Products/TinyMCE/skins/tinymce/plugins/table/editor_plugin.js
+Products/TinyMCE/skins/tinymce/plugins/table/editor_plugin.js_ORG
 Products/TinyMCE/skins/tinymce/plugins/table/merge_cells.htm.pt
 Products/TinyMCE/skins/tinymce/plugins/table/row.htm.pt
 Products/TinyMCE/skins/tinymce/plugins/table/table.htm.pt
 Products/TinyMCE/skins/tinymce/plugins/table/css/cell.css
-Products/TinyMCE/skins/tinymce/plugins/table/css/merge_cells.css
 Products/TinyMCE/skins/tinymce/plugins/table/css/row.css
 Products/TinyMCE/skins/tinymce/plugins/table/css/table.css
 Products/TinyMCE/skins/tinymce/plugins/table/js/cell.js
@@ -853,7 +853,6 @@ Products/TinyMCE/skins/tinymce/plugins/table/langs/br_dlg.js
 Products/TinyMCE/skins/tinymce/plugins/table/langs/bs_dlg.js
 Products/TinyMCE/skins/tinymce/plugins/table/langs/ca_dlg.js
 Products/TinyMCE/skins/tinymce/plugins/table/langs/ch_dlg.js
-Products/TinyMCE/skins/tinymce/plugins/table/langs/cn_dlg.js
 Products/TinyMCE/skins/tinymce/plugins/table/langs/cs_dlg.js
 Products/TinyMCE/skins/tinymce/plugins/table/langs/cy_dlg.js
 Products/TinyMCE/skins/tinymce/plugins/table/langs/da_dlg.js
@@ -861,7 +860,6 @@ Products/TinyMCE/skins/tinymce/plugins/table/langs/de_dlg.js
 Products/TinyMCE/skins/tinymce/plugins/table/langs/dv_dlg.js
 Products/TinyMCE/skins/tinymce/plugins/table/langs/el_dlg.js
 Products/TinyMCE/skins/tinymce/plugins/table/langs/en_dlg.js
-Products/TinyMCE/skins/tinymce/plugins/table/langs/eo_dlg.js
 Products/TinyMCE/skins/tinymce/plugins/table/langs/es_dlg.js
 Products/TinyMCE/skins/tinymce/plugins/table/langs/et_dlg.js
 Products/TinyMCE/skins/tinymce/plugins/table/langs/eu_dlg.js
@@ -877,12 +875,11 @@ Products/TinyMCE/skins/tinymce/plugins/table/langs/hu_dlg.js
 Products/TinyMCE/skins/tinymce/plugins/table/langs/hy_dlg.js
 Products/TinyMCE/skins/tinymce/plugins/table/langs/ia_dlg.js
 Products/TinyMCE/skins/tinymce/plugins/table/langs/id_dlg.js
+Products/TinyMCE/skins/tinymce/plugins/table/langs/ii_dlg.js
 Products/TinyMCE/skins/tinymce/plugins/table/langs/is_dlg.js
 Products/TinyMCE/skins/tinymce/plugins/table/langs/it_dlg.js
 Products/TinyMCE/skins/tinymce/plugins/table/langs/ja_dlg.js
 Products/TinyMCE/skins/tinymce/plugins/table/langs/ka_dlg.js
-Products/TinyMCE/skins/tinymce/plugins/table/langs/kl_dlg.js
-Products/TinyMCE/skins/tinymce/plugins/table/langs/km_dlg.js
 Products/TinyMCE/skins/tinymce/plugins/table/langs/ko_dlg.js
 Products/TinyMCE/skins/tinymce/plugins/table/langs/lb_dlg.js
 Products/TinyMCE/skins/tinymce/plugins/table/langs/lt_dlg.js
@@ -891,7 +888,6 @@ Products/TinyMCE/skins/tinymce/plugins/table/langs/mk_dlg.js
 Products/TinyMCE/skins/tinymce/plugins/table/langs/ml_dlg.js
 Products/TinyMCE/skins/tinymce/plugins/table/langs/mn_dlg.js
 Products/TinyMCE/skins/tinymce/plugins/table/langs/ms_dlg.js
-Products/TinyMCE/skins/tinymce/plugins/table/langs/my_dlg.js
 Products/TinyMCE/skins/tinymce/plugins/table/langs/nb_dlg.js
 Products/TinyMCE/skins/tinymce/plugins/table/langs/nl_dlg.js
 Products/TinyMCE/skins/tinymce/plugins/table/langs/nn_dlg.js
@@ -912,15 +908,13 @@ Products/TinyMCE/skins/tinymce/plugins/table/langs/sv_dlg.js
 Products/TinyMCE/skins/tinymce/plugins/table/langs/ta_dlg.js
 Products/TinyMCE/skins/tinymce/plugins/table/langs/te_dlg.js
 Products/TinyMCE/skins/tinymce/plugins/table/langs/th_dlg.js
-Products/TinyMCE/skins/tinymce/plugins/table/langs/tn_dlg.js
 Products/TinyMCE/skins/tinymce/plugins/table/langs/tr_dlg.js
 Products/TinyMCE/skins/tinymce/plugins/table/langs/tt_dlg.js
 Products/TinyMCE/skins/tinymce/plugins/table/langs/tw_dlg.js
 Products/TinyMCE/skins/tinymce/plugins/table/langs/uk_dlg.js
 Products/TinyMCE/skins/tinymce/plugins/table/langs/ur_dlg.js
 Products/TinyMCE/skins/tinymce/plugins/table/langs/vi_dlg.js
-Products/TinyMCE/skins/tinymce/plugins/table/langs/zh-cn_dlg.js
-Products/TinyMCE/skins/tinymce/plugins/table/langs/zh-tw_dlg.js
+Products/TinyMCE/skins/tinymce/plugins/table/langs/zh_dlg.js
 Products/TinyMCE/skins/tinymce/plugins/table/langs/zu_dlg.js
 Products/TinyMCE/skins/tinymce/plugins/template/blank.htm.pt
 Products/TinyMCE/skins/tinymce/plugins/template/editor_plugin.js
