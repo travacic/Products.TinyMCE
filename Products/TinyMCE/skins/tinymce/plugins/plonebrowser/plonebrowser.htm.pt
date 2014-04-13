@@ -110,14 +110,14 @@
                         <label id="dimensionslabel" for="dimensions" i18n:translate="plonebrowser_dlg_dimensions"></label>
                         <div class="widget">
                             <select id="dimensions" name="dimensions">
-			      <option value="">Original (803x120)</option>
-			      <option value="@@images/image/listing">Listing (16x16)</option>
-			      <option value="@@images/image/icon">Icon (32x32)</option>
-			      <option value="@@images/image/tile">Tile (64x64)</option>
-			      <option value="@@images/image/thumb">Thumb (128x128)</option>
-			      <option value="@@images/image/mini">Mini (200x200)</option>
-			      <option value="@@images/image/preview">Preview (400x400)</option>
-			      <option value="@@images/image/large">Large (768x768)</option>
+			      <option value="image">Original (803x120)</option>
+			      <option value="image_listing">Listing (16x16)</option>
+			      <option value="image_icon">Icon (32x32)</option>
+			      <option value="image_tile">Tile (64x64)</option>
+			      <option value="image_thumb">Thumb (128x128)</option>
+			      <option value="image_mini">Mini (200x200)</option>
+			      <option value="image_preview">Preview (400x400)</option>
+			      <option value="image_large">Large (768x768)</option>
                             </select>
                         </div>
                     </div>
