@@ -502,9 +502,10 @@ BrowserDialog.prototype.insertLink = function () {
             break;
         case "#email":
             link = jq('#mailaddress', document).val();
-	    				mailsplita = link.split("@")[0];
-		mailsplitb = link.split("@")[1];	
+	    mailsplita = link.split("@")[0];
+	    mailsplitb = link.split("@")[1];	
 	    jq('#rel', document).val(mailsplitb);
+	    
             mailsubject = jq('#mailsubject', document).val();
             if (mailsubject !== "") {
                 link += "?subject=" + mailsubject;
