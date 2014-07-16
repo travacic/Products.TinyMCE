@@ -215,6 +215,8 @@ BrowserDialog.prototype.init = function () {
                     mailsubject = "";
                 }
 
+
+		
                 jq('#mailaddress', document).val(mailaddress);
                 jq('#mailsubject', document).val(mailsubject);
                 jq('#cssstyle', document).val(selected_node.attr('style'));
@@ -452,6 +454,7 @@ BrowserDialog.prototype.setLinkAttributes = function (node, link) {
         .attr('href', link)
         .attr('data-mce-href', link)
         .attr('title', jq('#title', document).val())
+	.attr('rel', jq('#rel', document).val())
         .attr('target', jq('#targetlist', document).val())
         .attr('style', jq('#cssstyle', document).val())
         .removeClass('internal-link external-link anchor-link mail-link')
@@ -499,6 +502,9 @@ BrowserDialog.prototype.insertLink = function () {
             break;
         case "#email":
             link = jq('#mailaddress', document).val();
+	    				mailsplita = link.split("@")[0];
+		mailsplitb = link.split("@")[1];	
+	    jq('#rel', document).val(mailsplitb);
             mailsubject = jq('#mailsubject', document).val();
             if (mailsubject !== "") {
                 link += "?subject=" + mailsubject;
