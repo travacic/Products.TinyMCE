@@ -519,7 +519,7 @@ BrowserDialog.prototype.insertLink = function () {
 	    if (jq('#sbsjlu', document).is(':checked')) {
 	      maildom = link.split("@")[1];
 	      if (maildom.search(/uni-giessen/i) > -1) {
-		maildom = maildom.replace(/uni-giessen.de/g, '');
+		maildom = maildom.replace(/uni-giessen.de/g, 'uni');
 		jq('#class', document).val('jluint');
 	      }	 else {
 		  jq('#class', document).val('jluext');
