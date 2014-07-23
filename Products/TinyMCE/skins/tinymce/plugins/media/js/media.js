@@ -188,7 +188,7 @@
 						if (list) {
 							if (to_form) {
 								setVal(formItemName, list[name], type == 'video' || type == 'audio' ? name : '');
-							} /*else {
+							} /*ccc_travaci else {
 								delete list[name];
 
 								value = getVal(formItemName);
@@ -434,7 +434,7 @@
 			html += '<select id="media_type" name="media_type" onchange="Media.formToData(\'type\');">';
 			html += option("video");
 			html += option("audio");
-			//ccc_html += option("flash");
+			//ccc_travaci html += option("flash");
 			html += option("quicktime");
 			html += option("shockwave");
 			html += option("windowsmedia");
