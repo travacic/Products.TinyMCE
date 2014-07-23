@@ -188,7 +188,23 @@
 						if (list) {
 							if (to_form) {
 								setVal(formItemName, list[name], type == 'video' || type == 'audio' ? name : '');
-							} 
+							} /*else {
+								delete list[name];
+
+								value = getVal(formItemName);
+								if ((type == 'video' || type == 'audio') && value === true)
+									value = name;
+
+								if (defaultStates[formItemName]) {
+									if (value !== defaultStates[formItemName]) {
+										value = "" + value;
+										list[name] = value;
+									}
+								} else if (value) {
+									value = "" + value;
+									list[name] = value;
+								}
+							}*/
 						}
 					}
 				}
@@ -418,7 +434,7 @@
 			html += '<select id="media_type" name="media_type" onchange="Media.formToData(\'type\');">';
 			html += option("video");
 			html += option("audio");
-			//html += option("flash");
+			//ccc_html += option("flash");
 			html += option("quicktime");
 			html += option("shockwave");
 			html += option("windowsmedia");
