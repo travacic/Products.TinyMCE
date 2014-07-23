@@ -215,7 +215,17 @@ BrowserDialog.prototype.init = function () {
                     mailsubject = "";
                 }
 
-
+                // ccc_travaci_securem	
+                rela = selected_node.attr('rel');
+		if (rela !== '') {		  
+		  mailsplitc = mailaddress.split("@")[0];	
+		  if ((selected_node.hasClass("jluint")) && (rela !== 'uni-giessen.de')) {
+		    rela = rela+'-giessen.de';		  		    
+		  }
+		  mailaddress = mailsplitc+'@'+rela;
+		  jq('#sbsjlu', document).attr('checked','checked');
+		}	
+		else { jq('#sbsjlu', document).removeAttr('checked');}
 		
                 jq('#mailaddress', document).val(mailaddress);
                 jq('#mailsubject', document).val(mailsubject);
@@ -457,6 +467,7 @@ BrowserDialog.prototype.setLinkAttributes = function (node, link) {
 	.attr('rel', jq('#rel', document).val())
         .attr('target', jq('#targetlist', document).val())
         .attr('style', jq('#cssstyle', document).val())
+	.attr('class', jq('#class', document).val())
         .removeClass('internal-link external-link anchor-link mail-link')
         .addClass(panelname.substr(1, panelname.length) + '-link');
 };
@@ -478,6 +489,7 @@ BrowserDialog.prototype.insertLink = function () {
         link,
         name;
 
+    selected_node.removeClass('smail');    
     if (selected_node.get(0).tagName !== "A") {
         selected_node = selected_node.parent('a');
         if (selected_node.length === 0) {
@@ -502,10 +514,20 @@ BrowserDialog.prototype.insertLink = function () {
             break;
         case "#email":
             link = jq('#mailaddress', document).val();
-	    mailsplita = link.split("@")[0];
-	    mailsplitb = link.split("@")[1];	
-	    jq('#rel', document).val(mailsplitb);
-	    
+
+            // ccc_travaci_securem	    
+	    if (jq('#sbsjlu', document).is(':checked')) {
+	      maildom = link.split("@")[1];
+	      if (maildom.search(/uni-giessen/i) > -1) {
+		maildom = maildom.replace(/uni-giessen.de/g, '');
+		jq('#class', document).val('jluint');
+	      }	 else {
+		  jq('#class', document).val('jluext');
+	      }     
+	      link = link.split("@")[0];
+	      jq('#rel', document).val(maildom);
+	    }            	    	   
+    
             mailsubject = jq('#mailsubject', document).val();
             if (mailsubject !== "") {
                 link += "?subject=" + mailsubject;

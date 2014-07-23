@@ -255,13 +255,19 @@
             <div class="field">
 	      <label for="sbsjlu" i18n:domain="plone.tinymce" i18n:translate="">Spam-Schutz</label>
                 <div class="widget">
-                    <input type="checkbox" name="sbsjlu" id="sbsjlu" value="1"  />
+                    <input type="checkbox" name="sbsjlu" id="sbsjlu" />
+                </div>
+            </div>
+
+            <div class="field">
+                <div class="widget">
+                    <input type="hidden" name="class" id="class" value="" />
                 </div>
             </div>
             
             <div class="field">
                 <div class="widget">
-                    <input type="hidden" name="rel" id="rel" value="" size="40" />
+                    <input type="hidden" name="rel" id="rel" value="" />
                 </div>
             </div>
         </div>
