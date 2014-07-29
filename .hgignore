@@ -1,0 +1,26 @@
+# use glob syntax.
+syntax: glob
+
+*.elc
+*.swp
+*.pyc
+*.pyo
+*.fs.*
+*.fs
+*.mo
+*~
+.project
+.pydevproject
+.settings
+bin/**
+build/**
+develop-eggs/**
+eggs/**
+dist/**
+parts/**
+var/**
+*.egg-info/**
+.installed.cfg
+.sass-cache/**
+theme.xsl
+output.html
