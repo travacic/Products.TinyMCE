@@ -8,12 +8,12 @@ Products.ResourceRegistries
 zope.app.content
 zope.schema>=3.5.4
 
+[docs]
+sphinx
+
 [test]
 plone.app.testing
 zope.testing
 unittest2
 Pillow
 plone.app.contenttypes
-
-[docs]
-sphinx

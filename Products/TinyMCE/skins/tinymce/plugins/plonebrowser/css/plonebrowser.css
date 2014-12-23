@@ -89,5 +89,14 @@ input[disabled] { background: #F6F6F6; border: 1px solid #E6E6E6; color: #B2C3D9
 #previewexternalurl { display: block; padding-left: 20px; border: none!important; }
 #previewexternal { display: none; }
 
-.contenttype-image { line-height: 2em; padding-left: 20px !important; background: url("contenttypes-sprite.png") no-repeat scroll 0 -860px transparent;}
-.contenttype-file { line-height: 2em; padding-left: 20px !important; background: url("contenttypes-sprite.png") no-repeat scroll 0 -428px transparent;}
+.contenttype-image { line-height: 2em; padding-left: 20px; background: no-repeat scroll 0 -860px transparent url("++theme++plonetheme.jlu/images/contenttypes-sprite.png");}
+.contenttype-file { line-height: 2em; padding-left: 20px; background:  no-repeat scroll 0 -428px transparent url("++theme++plonetheme.jlu/images/contenttypes-sprite.png");}
+.contenttype-document {  line-height: 2em; padding-left: 20px;  background: no-repeat transparent 0px 0px url("++theme++plonetheme.jlu/images/contenttypes-sprite.png");}
+.contenttype-event {  line-height: 2em; padding-left: 20px; background: no-repeat transparent 0px -214px url("++theme++plonetheme.jlu/images/contenttypes-sprite.png");}
+.contenttype-folder {  line-height: 2em; padding-left: 20px; background: no-repeat transparent 0px -648px url("++theme++plonetheme.jlu/images/contenttypes-sprite.png");}
+.contenttype-link {  line-height: 2em; padding-left: 20px; background: no-repeat transparent 0px -1080px url("++theme++plonetheme.jlu/images/contenttypes-sprite.png");}
+.contenttype-news-item {  line-height: 2em; padding-left: 20px; background: no-repeat transparent 0px -1296px url("++theme++plonetheme.jlu/images/contenttypes-sprite.png");}
+.contenttype-plone-site {  line-height: 2em; padding-left: 20px; background: no-repeat transparent 0px -1512px url("++theme++plonetheme.jlu/images/contenttypes-sprite.png");}
+.contenttype-topic {  line-height: 2em; padding-left: 20px; background: no-repeat transparent 0px -1726px url("++theme++plonetheme.jlu/images/contenttypes-sprite.png");}
+.contenttype-collection {  line-height: 2em; padding-left: 20px; background: no-repeat transparent 0px -1727px url("++theme++plonetheme.jlu/images/contenttypes-sprite.png");}
+.contenttype-contentpanels {  line-height: 2em; padding-left: 20px; background: no-repeat transparent 0px -105px url("++theme++plonetheme.jlu/images/contenttypes-sprite.png");}
