@@ -9,7 +9,6 @@ background: transparent;
 /* Override #content styles (dialog body padding) from plone.css with more accurate selector */
 .dialog-wrapper#content {
 font-size: 110%;
-padding: 1em 1em 0em 1em;
 background: white;
 margin: 0!important;
 }
