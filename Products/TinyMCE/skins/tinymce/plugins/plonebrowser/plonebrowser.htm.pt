@@ -110,7 +110,7 @@
                         <label id="dimensionslabel" for="dimensions" i18n:translate="plonebrowser_dlg_dimensions"></label>
                         <div class="widget">
                             <select id="dimensions" name="dimensions">
-			      <option value="">Original (803x120)</option>
+			      <option value="@@images/image">Original (803x120)</option>
 			      <option value="@@images/image/listing">Listing (16x16)</option>
 			      <option value="@@images/image/icon">Icon (32x32)</option>
 			      <option value="@@images/image/tile">Tile (64x64)</option>

@@ -1,6 +1,5 @@
 # use glob syntax.
 syntax: glob
-
 *.elc
 *.swp
 *.pyc
@@ -8,6 +7,8 @@ syntax: glob
 *.fs.*
 *.fs
 *.mo
+*.map
+*.lock
 *~
 .project
 .pydevproject
@@ -24,3 +25,4 @@ var/**
 .sass-cache/**
 theme.xsl
 output.html
+
