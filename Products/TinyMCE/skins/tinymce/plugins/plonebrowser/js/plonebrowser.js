@@ -432,6 +432,37 @@ BrowserDialog.prototype.parseImageScale = function (url) {
             "scale": ""
         };
 
+    if (url.indexOf('/') > -1) {
+        parts = url.split('/');
+        last_part = parts[parts.length - 1];
+
+        if (last_part.indexOf('image_') > -1) {
+            // This is an old-style scale URL. We'll translate the scale to
+            // the form used by plone.app.imaging.
+            parsed.scale = "@@images/image" + parts.pop().substring(6);
+            parsed.url = parts.join("/");
+        } else {
+            scale_pos = url.search(/@@images\/[^\/]+\/.+/);
+            if (scale_pos > -1) {
+                // This is a new style URL
+                parsed.url = url.substring(0, scale_pos - 1);
+                parsed.scale = url.substring(scale_pos);
+            }
+        }
+    }
+
+    return parsed;
+};
+
+BrowserDialog.prototype.parseImageScale = function (url) {
+    var parts,
+        last_part,
+        scale_pos,
+        parsed = {
+            "url": url,
+            "scale": ""
+        };
+
     // ccc @@images to image 
     if (url.indexOf('/') > -1) {
         parts = url.split('/');
