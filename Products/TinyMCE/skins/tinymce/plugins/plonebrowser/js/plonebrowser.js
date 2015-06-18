@@ -436,7 +436,7 @@ BrowserDialog.prototype.parseImageScale = function (url) {
         parts = url.split('/');
         last_part = parts[parts.length - 1];
 
-        if (last_part.indexOf('image_') > -1) {
+        if (last_part.indexOf('image') > -1) {
             // This is an old-style scale URL. We'll translate the scale to
             // the form used by plone.app.imaging.
             parsed.scale = "@@images/image/" + parts.pop().substring(6);
